@@ -86,7 +86,6 @@ def calculate():
                 "vector": vector
             },
             "model": "Метод Гауса",
-            "variant": "POST JSON (непарний)",
             "solution": solution
         })
 
