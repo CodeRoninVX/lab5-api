@@ -2,6 +2,7 @@
 # Автор: Ахмадзада Вахід, група АІ-232
 # Варіант: JSON POST-запит (непарний номер у списку)
 
+import os
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
@@ -97,8 +98,9 @@ def calculate():
 
 
 if __name__ == '__main__':
-    print("Сервер запущено: http://127.0.0.1:5000")
-    print("Endpoint: POST http://127.0.0.1:5000/calculate")
-
     port = int(os.environ.get("PORT", 5000))
+
+    print(f"Сервер запущено на порту {port}")
+    print("Endpoint: POST /calculate")
+
     app.run(host='0.0.0.0', port=port, debug=False)
