@@ -20,3 +20,6 @@ curl -X POST http://127.0.0.1:5000/calculate -H "Content-Type: application/json"
 
 ## Очікувана відповідь:
 {"model":"Метод Гауса","solution":[2.0,3.0,-1.0],...}
+
+## Статус
+API працює ✅
